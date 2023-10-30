@@ -1,0 +1,90 @@
+/* 색깔표현방법1 */
+h3 {
+    color: green;
+}
+
+/* 색깔표현방법2 */
+p {
+    color: #123456;
+            /* 2자리씩 앞쪽부터 각각 R, G, B */
+}
+
+/* 색깔표현방법3 */
+p {
+    color: rgb(255, 0, 0);
+}
+
+/* 색깔표현방법4 : 네모 클릭하여 컬러피커 이용*/
+p {
+    color: rgb(14, 214, 164)
+}
+
+/* p 여러개의 엘리먼트 중 id가 two인 친구만 골라서 색상변경 */
+/* 1. #id선택자 */
+#two {
+    color: red;
+}
+
+
+/* 2. .class선택자 */
+.orange {
+    color: orange;
+}
+
+/* 둘이 충돌시 id가 우선 */
+
+p.center {
+    text-align: center;
+}
+
+p#size {
+    font-size: 50px;
+}
+
+li {
+    color: blueviolet;
+    background-color: #00ff00;
+}
+
+ul.korean > li {
+    color:red;
+    background-color: blue;
+}
+
+.box {
+    /* border: 5px dashed red; */
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 6px;
+
+    margin-top: 10px;
+    margin-left: 5px;
+
+    padding-top: 10px;
+
+    text-align: center
+}
+
+.font { 
+    font-family: Tangerine;
+}
+
+.d-inline {
+    display: inline;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-none {
+    display: none;
+}
+
+/* 화면 크기에 맞춰서 동적으로 바꿔줌. */
+.d-flex {
+    display: flex;
+    /* justify-content: center; */
+    justify-content: space-around;
+
+}

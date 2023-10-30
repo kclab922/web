@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        선택자 {
+            속성명1: 속성값;
+            속성명2: 속성값;
+        }
+        */
+        h2 {
+            color: blue; 
+        }
+
+
+    </style>
+    <link rel="stylesheet" href="./mystyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+</head>
+<body>
+    <!-- 1번째방식: inline CSS 태그 내에 직접 css속성 집어넣기 -->
+    <h1 style="color:red">hello</h1>
+    <!-- 2번째방식: internal CSS 현재 파일 내에 style이라는 태그 만들어서 연동 -->
+    <h2 class="'font">world</h2>
+    <!-- 3번째방식: external CSS 따로 css파일 만들어서 연동 **유지보수 측면에서 가장 추천 -->
+    <h3>welcome</h3>
+
+    <p id="size">one</p>
+    <p id="two">two</p>
+    <p>three</p>
+
+    <p>하나</p>
+    <p class="orange" id="two">둘</p>
+    <P class="orange center">셋</P>
+
+    <ul>    
+        <li>python</li>
+        <li>java</li>
+        <li>javascript</li>
+    </ul>
+
+    <ul class="korean">
+        <li>파이썬</li>
+        <li>자바</li>
+        <li>자바스크립트</li>
+    </ul>
+
+    <div class="box" width="100px">
+        box
+    </div>
+    <div class="box">
+        box
+    </div>
+
+    <!-- block level element: 한 줄 다 차지하므로 다음 게 아랫줄로 내려감 -->
+    <h1 class="d-none">hello</h1>
+    <h1>hello</h1>
+    
+    <!-- inline element: 해당 글자만큼만 차지. 다음 게 옆에 적히므로 한 줄에 여러 내용 기입 가능 -->
+    <span class="d-block">hello</span>
+    <span>hello</span>
+
+    <div class="d-flex">
+        <!-- div.box*3 : box라는 클래스 가진 div 3개 만들기-->
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+
+</body>
+</html>
