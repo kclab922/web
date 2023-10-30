@@ -1,0 +1,65 @@
+<!-- HTML의 기본구조 => <태그이름> </태그이름> -->
+
+<!-- 느낌표+tab -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- head => 문서 정보들을 담는공간 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>안녕하세요</title>
+    <link rel="shortcut icon" href="./assets/119-200x300.jpg" type="image/x-icon">
+</head>
+<body>
+    <!-- body => 브라우저 화면에 나타나는 정보들을 담는 공간 -->
+    <h1>hello</h1>
+    <h2>world</h2>
+    <p>안녕하세요. 반갑습니다.</p>
+
+    <!-- <태그이름 속성명="속성값" 속성명2="속성값2">내용</태그이름> -->
+    <!-- a => anchor 내가 앞으로 가고싶은 페이지에 걸어두는 닻. 하이퍼텍스트. / href => hyper reference -->
+    <a href="https://google.com">google</a>
+    <!-- _blank : 링크를 새 탭에서 띄우기 -->
+    <a href="https://naver.com" target="_blank">naver</a>
+
+    <!-- 여는 태그는 있으나, 닫는 태그는 없음. 내용이 딱히 없으므로. -->
+    <!-- alt: alternate 사진이 오류나서 엑박인 경우 대신 띄워줄 메시지 / 시각장애인에게 그림 대신 제공하는 정보-->
+    <img src="https://picsum.photos/200/300" alt="">
+    <img src="./assets/119-200x300.jpgㅁ" alt="풍경" width="100" height="300">
+
+    <!-- Lorem+tab 의미없는 임시 텍스트를 구조 잡기 위해 넣어두는 것 -->
+    <p style="color:red; font-size:20px"><b>Lorem ipsum</b> <i>dolor</i> <strong>sit</strong> amet consectetur adipisicing elit. Illo, nisi excepturi molestiae repellendus quia temporibus quas blanditiis fuga minima neque laborum nam, odit tempore. Consequuntur, et aperiam? Ratione, deleniti ut.</p>
+
+    <!-- >: 자식이라는 뜻 table>tr*3 => emmet 이라는 기능 / tr: table row / th: table heather-->
+    <table style="border: 1px solid">
+        <tr>
+            <th style="border: 1px solid">이름</th>
+            <th style="border: 1px solid">주소</th>
+            <th style="border: 1px solid">깃헙</th>
+        </tr>
+        <tr>
+            <td>kim</td>
+            <td>seoul</td>
+            <td>kim.kim</td>
+        </tr>
+        <tr>
+            <td>park</td>
+            <td>seoul</td>
+            <td>park1234</td>
+        </tr>
+    </table>
+
+    <!-- ul: unordered list / li: list -->
+    <ul style="list-style-type: square">
+        <li>coffee</li>
+        <li>tea</li>
+        <li>milk</li>
+    </ul>
+
+    <ol type="i">
+        <li>하나</li>
+        <li>둘</li>
+        <li>셋</li>
+    </ol>
+</body>
+</html>

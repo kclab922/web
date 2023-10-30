@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>form</h1>
+    <form action="">
+        <!-- label은 input칸에 대한 설명이기도 하면서, 해당 라벨 클릭시 해당 input칸으로 가는 것. 'username'이 공통적으로 label쪽과 input의 id에 들어가야 함.-->
+        <!-- 일반적으로는 id랑 name을 똑같이 씀. (여기서 name은 ) -->
+        <label for="username">아이디</label>
+        <input type="text" id="username" name="us">
+
+        <br>
+
+        <label for="password">비밀번호</label>
+        <input type="text" id="password" name="pw">
+        
+        <br>
+
+        <!-- name=choice: 네임에 값 하나밖에 못들어가므로 선택하는 형태가 됨 -->
+        <!-- label의 for와 input의 id를 연결해줘야 둘이 연결됨 -->
+        <label for="html">HTML</label>
+        <input type="radio" name="choice" value="HTML" id="html">
+        <label for="css">CSS</label>
+        <input type="radio" name="choice" value="CSS" id="css">
+
+        <br>
+
+        <label for="vehicle1">bike</label>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="True">
+        <label for="vehicle2">car</label>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="True">
+
+        <br>
+        
+        <input type="email">
+        <input type="password">
+        <input type="date">
+        <input type="color">
+
+        <input type="submit">
+    </form>
+</body>
+</html>
